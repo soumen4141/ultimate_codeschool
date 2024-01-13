@@ -1,0 +1,939 @@
+/*----------Css boiler plate css start----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&family=Gabarito&family=Jost&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@300;400&family=Questrial&family=Roboto+Slab&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: ' Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+html,body{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow: row wrap;
+    scroll-behavior: smooth;
+    
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Gilroy-Medium.otf);
+  }
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+/*----------Css boiler plate css end----------*/
+
+
+/*----------navber css start----------*/
+#navber{
+    width:100vw;
+    height:7vh;
+    background-color:  rgb(253, 253, 253);
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: all .5s ease;
+    box-shadow: 0px 1px 15px grey; 
+    padding-right: 10vw;
+    padding-left: 8vw;
+    
+}
+
+#navber .logo {
+    width: 6vw;
+    height: 6vw;
+    position: relative;
+    top:-1.3vw;
+    
+}
+#navber .Brand_name {
+    width: 8vw;
+    height: 1.7vw;
+    color: black;
+    font-size: 1.6vw;
+    background-color: transparent;
+    border-left: 0.3vw solid rgb(138, 135, 135);
+    padding: 0vw 0.6vw;
+    position: relative;
+    top: 0.5vw;
+    left: -0.3vw;
+    font-family: "Gilroy";
+}
+
+.logo_brand{
+    background-color: transparent;
+    position: relative;
+    top: .35vw;
+    display: flex;
+}
+
+
+
+
+#navber .menus{
+    min-width:20vw;
+    background-color:transparent;
+    position: relative;
+    top:.82vw;
+    left:180px;
+    display: flex;
+    flex-flow: row wrap;
+    gap:1vw;
+    font-family: 'Heebo', sans-serif
+
+}
+#navber .menus a{
+    min-width:2.7vw;
+    height:1.5vw;
+    background-color:transparent;
+    font-size:1.1vw;
+    text-decoration: none;
+    
+
+}
+#navber .menus a li {
+    min-width: 2.7vw;
+    list-style-type: none;
+    padding: .2vw .2vw;
+    color: black;
+     font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+    transition: all .5s ease;
+}
+#navber .menus a li:hover {
+
+    color: rgb(96, 96, 240);
+
+}
+.log_in{
+    background-color: transparent;
+    position: relative;
+    top: .4vw;
+    display: flex;
+    gap: .4vw;
+}
+#navber .log_in .dashboard,#navber .log_in .signIn{
+    width:6vw;
+    height:2.7vw;
+    background-color: crimson;
+    padding: .5vw .5vw;
+    border: 2px solid transparent;
+    border-radius: .2vw .2vw .2vw .2vw;
+    color: aliceblue;
+    font-size: .8vw;
+    box-shadow: 0px 0px 10px grey;
+    font-family: 'Heebo', sans-serif;
+
+}
+#navber .log_in .logout{
+    width:6vw;
+    height:2.7vw;
+    background-color: crimson;
+    padding: .5vw .5vw;
+    border: 2px solid transparent;
+    border-radius: .2vw .2vw .2vw .2vw;
+    color: aliceblue;
+    font-size: .8vw;
+    box-shadow: 0px 0px 10px grey;
+    font-family: 'Heebo', sans-serif;
+}
+
+#navber .log_in .signIn{
+   
+background-color: blueviolet;
+
+}
+
+
+.profile {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: rgb(209, 209, 253);
+    border: 0.15vw solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 10.6px;
+    left: 270px;
+    font-size: 1.5vw;
+    padding-bottom: 30px;
+    visibility: hidden;
+
+}
+.profile_manu{
+    width: 8vw;
+    height: 0px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    top: 67px;
+    left: 135px;
+    font-size: 1.5vw;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+.profile_manu li {
+    width: 8vw;
+    height: 2vw;
+    background-color: rgb(247, 248, 247);
+    padding-left: 44px;
+    padding-top: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid grey;
+    list-style-type: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.profile_manu li:hover{
+    color:blueviolet
+}
+
+/*----------navber css end----------*/
+
+/*----hero section css code start-----*/
+.main{
+    width:100vw;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.main .hero_section{
+  width:100vw;
+  height:100vh;
+  display: flex;
+}
+
+.main .hero_section .intro,.main .hero_section .intro_img{
+    width:50vw;
+    height:100vh;
+    background-color:transparent;
+    padding-top: 10vw;
+    padding-left: 10vw;
+}
+.hero_section .intro .introduction{
+    width:45vw;
+    background-color: transparent;
+    position: relative;
+    top:0px;
+    left:0px;
+    
+}
+.hero_section .intro .introduction h1{
+    font-size: 4vw;
+}
+.hero_section .intro .facility{
+ width:20vw;
+ min-height:7vh;
+ background-color: transparent;
+ margin-top: 1.8vw;
+ position: relative;
+ left: 0;
+
+}
+
+.hero_section .intro .facility h3{
+ margin-top: .9vw;
+ font-size: 1.2vw;
+ font-weight: 500;
+ font-family: 'Belanosima', sans-serif;
+font-family: 'Caprasimo', serif;
+font-family: 'Gabarito', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+.hero_section .intro .facility h3 span{
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: .5vw;
+    position: relative;
+    top:.3vw;
+    color: white;
+}
+.main .hero_section .buttons{
+    min-width:17vw;
+    margin-top: 3vw;
+    position: relative;
+    top:0;
+    left:0;
+    transform: scale(.3,.3);
+    opacity: 0;
+}
+.main .hero_section .buttons #button1,.main .hero_section .buttons #button2{
+
+    width:8vw;
+    height:50px;
+    background-color: red;
+    font-size: .8vw;
+    border: .5vw solid transparent;
+    border-radius: .5vw .5vw;
+    margin-right: .6vw;
+}
+.main .hero_section .buttons #button1{
+
+background-color: black;
+color: white;
+transition: all .5s ease;
+font-family: 'Heebo', sans-serif;;
+
+}
+.main .hero_section .buttons #button1:hover{
+background-color: transparent;
+border: .15vw solid black;
+color:black;
+}
+.main .hero_section .buttons #button2{
+
+border: .1vw solid blueviolet;
+background-color: transparent;
+font-family: 'Heebo', sans-serif;;
+
+}
+
+
+
+
+
+
+.main .hero_section .intro_img{
+    background-color:transparent;
+    padding-left: 0vw;
+    padding-top: 3vw;
+
+}
+.main .hero_section .intro_img img{
+    width: 50vw;
+    height: 90vh;
+    transform: scale(.5,.5);
+}
+/*----hero section css code start-----*/
+
+/*----companies section css code start-----*/
+
+.brand_logo{
+    width:100%;
+    min-height:40vh;
+    background-color: transparent;
+    position: relative;
+    padding-top: 8vw;
+    padding-bottom: 5vw;
+}
+.brand_logo h1{
+    width:40vw;
+    position: relative;
+    top:0vw;
+    left:37vw;
+    font-size: 2vw;
+}
+.brand_logo h1 span{
+    font-size: 1.4vw;
+    margin-left: 9.3vw;
+    color:blueviolet;
+}
+.brand_logo .marquee {
+    width: 85vw;
+    background-color:transparent;
+    position: relative;
+    top: 2vw;
+    left: 12vw;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.brand_logo .marquee img{
+    width:165px;
+    height:95px;
+    margin-right: 50px;
+    margin-bottom: .5vw;
+    transition: all .3s ease;
+}
+
+.brand_logo .marquee img:hover{
+    box-shadow: 0px 0px 15px grey;
+
+}
+
+/*----companies section css code end-----*/
+.after_brand{
+    width:100vw;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15vw 12vw;
+}
+.after_brand .first_one
+    {
+    width:100vw;
+    min-height: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+.after_brand .first_one .image{
+    width:25vw;
+    height:28vw;
+    background-color: transparent;
+}
+.after_brand .first_one .image img{
+    width:100%;
+    height:100%;
+    transform: scale(.5,.5);
+}
+
+.after_brand .first_one .description{
+    width:37vw;
+    height:30vw;
+    background-color: transparent;
+position: relative;
+top:80px;
+left:200px;
+opacity: 1;
+
+}
+
+.after_brand .first_one .description h2{
+    width:100%;
+    font-size: 2vw;
+    margin-bottom: 1.5vw;
+    font-family: 'Heebo', sans-serif;;
+}
+.after_brand .first_one .description h4{
+
+    width:100%;
+    font-size: 1vw;
+    color:rgb(24, 23, 23);
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+}
+.after_brand .first_one .description button{
+
+    width:7vw;
+    height:3vw;
+    background-color:#da5ce9;
+    margin-top: 1.9vw;
+    border: 1px solid transparent;
+    border-radius: .5vw .5vw;
+    font-size: .8vw;
+    color: white;
+}
+.after_brand .second_one {
+    width:100vw;
+    min-height: 50%;
+    background-color:transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10vw;
+}
+.after_brand .second_one .description {
+    width:37vw;
+    height:30vw;
+    background-color: transparent;
+position: relative;
+top:80px;
+left:10px;
+
+}
+.after_brand .second_one .description h2 {
+
+
+    width:100%;
+    font-size: 2vw;
+    margin-bottom: 1.5vw;
+    font-family: 'Heebo', sans-serif;;
+
+}
+.after_brand .second_one .description h4{
+
+
+    width:100%;
+    font-size: 1vw;
+    color:rgb(15, 15, 15);
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+.after_brand .second_one .description button{
+
+    width:7vw;
+    height:3vw;
+    background-color: #da5ce9;
+    margin-top: 1.9vw;
+    border: 1px solid transparent;
+    border-radius: .5vw .5vw;
+    font-size: .8vw;
+    color: white;
+}
+.after_brand .second_one .image{
+    width:25vw;
+    height:28vw;
+    background-color: transparent;
+}
+.after_brand .second_one .image img{
+    width:115%;
+    height:100%;
+    transform: scale(.5,.5);
+
+}
+
+/*-----course css code start----*/
+
+.course{
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    padding: 3vw 3vw;
+    position: relative;
+}
+.course h1{
+    font-size: 2vw;
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    padding-left: 32vw;
+
+    
+}
+
+.course .course_slider{
+    width:100%;
+    height:70vh;
+    background-color: transparent;
+    margin-top: 3vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.course .course_slider .slider_container{
+    min-width:100%;
+    height:100%;
+    white-space: nowrap; 
+    
+    
+}
+.course .course_slider::-webkit-scrollbar{
+    display: none;
+}
+
+.course .course_slider .slider_container .box{
+   width:23vw;
+   height:35vw;
+   background-color: rgb(255, 255, 255);
+   margin-right: 3vw;
+   display: inline-block;
+   padding: 1.3vw 1.3vw;
+   box-shadow: 0px 0px 25px grey;
+
+}
+.box .main_box{
+  width: 100%;
+  height:100%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+.box .main_box .course_img{
+
+    width:100%;
+    height:50%;
+    background-color: aqua;
+    margin-bottom: 1vw;
+}
+.box .main_box .course_img img{
+    width:100%;
+    height:100%;
+}
+
+
+.box .main_box .course_details{
+
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+  
+}
+.box .main_box .course_details p{
+
+    font-size: 1.4vw;
+    font-family: 'Heebo', sans-serif;;
+    font-weight: 700;
+    
+
+}
+
+.box .main_box .course_details .course_price{
+    width:100%;
+    height:5vw;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  
+}
+.box .main_box .course_details .course_price span{
+
+    width: 7vw;
+    height: 3vw;
+    font-size: 2vw;
+    background-color:transparent;
+    font-family: 'Heebo', sans-serif;
+    color: blueviolet;
+    position: relative;
+   
+}
+.box .main_box .course_details .course_price #main_price{
+  width:1vw;height:1vw;
+  font-size: 1.2vw;color: grey;
+  text-decoration: line-through;
+    position: relative;
+    top:5px;
+    left:-76px;
+
+
+}
+.box .main_box .course_details .course_price .off{
+    width:7vw;
+    height: 2.5vw;
+    background-color: #020120;
+    color: green;
+    font-size: .9vw;
+    border: none;
+}
+.box .main_box .course_details .course_buy {
+
+    width:100%;
+    height:3vw;
+    background-color:blueviolet;
+    font-family: 'Heebo', sans-serif;
+
+    border: 1px solid transparent;
+
+    position: relative;
+    top:-2vw;
+    font-size: 1.3vw;
+    color: white;
+    transition: all .2s ease-in;
+}
+.box .main_box .course_details .course_not_buy {
+
+    width:100%;
+    height:3vw;
+    background-color:blueviolet;
+    font-family: 'Heebo', sans-serif;
+
+    border: 1px solid transparent;
+
+    position: relative;
+    top:-2vw;
+    font-size: 1.3vw;
+    color: white;
+}
+.box .main_box .course_details .course_buy:hover{
+
+   background-color: transparent;
+   border: 2px solid black;
+   color: black;
+
+}
+
+
+.course .left,.course .right{
+    width:3vw;
+    height: 3vw;
+    background-color:black;
+    float: left;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top:55%;
+    
+}
+.course .right{
+    
+    float: right;
+    position: relative;
+    transform: rotate(180deg)
+}
+   
+
+
+/*-----course css code end----*/
+
+/*-----instructor css code start----*/
+
+
+.instruc{
+    width:100vw;
+    height:100vh;
+    padding-top: 5vw;
+    
+}
+
+.instruc h1{
+    
+        font-size: 2.5vw;
+        color: rgb(22, 22, 22);
+        font-family: 'Heebo', sans-serif;
+        padding-left: 35vw;   
+    
+}
+
+.instruc .intruc_slider{
+    width:60vw;
+    height:70vh;
+    background-color: transparent;
+    margin-left: 20vw;
+    margin-top: 2vw;
+    overflow-y: hidden;
+}
+
+
+.instruc .intruc_slider .intruc_container{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    white-space: nowrap;
+    
+}
+.instruc .intruc_slider::-webkit-scrollbar{
+    display: none;
+}
+
+.instruc .intruc_slider .intruc_container .instructor{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    display: inline-block;
+
+}
+.instruc button{
+    width:3vw;
+    height: 3vw;
+    background-color:transparent;
+    float: left;
+    border: 2px solid blue;
+    border-radius: 50%;
+
+}
+.instruc .ins_right{
+    float: right;
+    position: relative;
+    left:-46vw ;
+    top:2vw;
+    transform: rotate(180deg);
+
+}
+.instruc .ins_left{
+    position: relative;
+    left:46vw ;
+    top:2vw;
+}
+
+/*-----instructor css code end----*/
+
+
+/*-----first footer1 css code start----*/
+
+
+
+
+.footer{
+    background-color: blueviolet;
+    width:100%;
+    height:460px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 3vw;
+}
+.footer h2{
+    width:100%;
+    height:200px;
+    font-size:50px;
+    position:relative;
+    top:65px;
+    left:780px;
+    padding: 20px 20px 20px 20px;
+    color:white;
+    background-color: transparent;
+    font-family: "Gilroy";
+
+
+
+}
+
+.footer h4{
+    width:100%;
+    height:200px;
+    font-size:30px;
+    position:relative;
+    top:-50px;
+    left:560px;
+    padding: 20px 20px 20px 20px;
+    color:white;
+    background-color: transparent;
+    font-weight: 300;
+}
+.footer div {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -155px;
+    left: 745px;
+    margin: 0px 15px 0px 0px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+    padding: 12.8px 5px 10px 13.9px;
+}
+.footer div i{
+    font-size: 35px;
+    position: relative;
+    top:0px;
+    left:0px;
+
+}
+.footer div:hover{
+
+    box-shadow: 0px 0px 15px rgb(245, 245, 245);
+    transform: scale(1.15,1.15);
+    background-color: black;
+    color: white;
+
+}
+
+.terms{
+    width:25vw;
+    height:3vw;
+    background-color: transparent;
+    position: relative;
+    top:-5vw;
+    left:37vw;
+    display: flex;
+    justify-content: space-between;
+}
+.terms h3{
+    font-family: 'Heebo', sans-serif;
+     font-size: 1vw;
+     color: white;
+
+}
+
+
+/*-----first footer1 css code start----*/
+
+
+
+/*----instructor section---*/
+
+.instructor{
+    padding: 70px 70px 70px 70px
+}
+.instructor img{
+
+
+    width:550px;
+    height:450px
+}
+
+.instructor  .about{
+
+    width:500px;
+    height:500px;
+    display: inline-block;
+    background-color:transparent;
+
+    position: relative;
+    top:-170px;
+    left:50px;
+}
+
+
+.about .about_but{
+
+    width:200px;
+    height: 50px;
+    border: 2px solid blueviolet;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px 5px 5px 5px;
+
+}
+.about h2{
+    font-size: 45px;
+    position: relative;
+    top:65px;
+    left:-200px;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+
+
+.about .para{
+    width:300px;
+    height:200px;
+    background-color: transparent;
+    position: relative;
+    top:90px;
+    left:0px;
+    text-align: justify;
+
+}
+
+.para p{
+width:200px;
+
+
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 10px;
+    text-align: justify;
+}

@@ -1,0 +1,614 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&family=Poppins&family=Roboto&family=Roboto+Slab&display=swap');
+
+*{
+    background-color:transparent;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+.courses_intro{
+    background-color: transparent;
+    color:white;
+    position: relative;
+    top: 131px;
+    left: 798px;
+    font-size: 51px;
+}
+.catagories{
+    width:100vw;
+    min-height:100px;
+    background-color:transparent;
+    position: relative;
+    top: 90px;
+    left: 0px;
+}
+.catagories h1{
+    background-color: transparent;
+    color:white;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    font-size: 30px;
+
+}
+.catagories div{
+    width:100vw;
+    min-height:100px;
+    background-color: transparent;
+    position: relative;
+    top: -50px;
+    left: 0px;
+    padding: 20px 10px 10px 60px;
+    
+}
+.cat_manus li{
+    min-width:43px;
+    min-height: 42px;
+    background-color: rgb(54, 54, 53);
+    margin-left: 20px;
+    display: inline-block;
+    color:white;
+    padding:10px 10px 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+
+
+    
+
+
+
+}
+.cat_manus li b{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    font-size: 18px;
+    
+}
+
+.cat_manus .live_videos{
+    width:150px;
+    min-height:45px;
+    background-color: rgb(250, 6, 189);
+    position: relative;
+    top: 73px;
+    left: -694px;
+    padding: 13px 10px 10px 19px;
+    margin:10px 10px 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    color: white;
+
+
+}
+/*before course section css*/
+
+.course_section {
+    width: 100vw;
+    min-height: 700px;
+    background-color:transparent;
+    position: relative;
+    top: 162px;
+    left: 79px;
+    padding: 20px 10px 10px 60px;
+    display: inline-block;
+}
+.filter {
+    width: 15vw;
+    min-height: 600px;
+    background-color: rgb(253, 117, 5);
+    position: fixed;
+    top: 362px;
+    left: 1593px;
+    padding: 20px 10px 10px 60px;
+    display: inline-block;
+}
+
+/*---------nabver stylling strating------*/
+/* 
+.navber{
+    background-color:transparent;
+    width:100vw;
+    height:60px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 1000;
+    color: white;
+    
+}
+.navber .logo {
+    width: 106px;
+    position: relative;
+    top: -6px;
+    left: 23px;
+    background-color: transparent;
+}
+
+.brand_name {
+    background-color: transparent;
+    width: 206px;
+    height: 29px;
+    position: relative;
+    top: 23.8px;
+    left: 30px;
+    padding: 0.1px 14px 14px 14px;
+    font-size: 23px;
+    border-left: 3px solid grey;
+}
+.manus {
+    background-color: transparent;
+    position: relative;
+    top: 19px;
+    left: 610px;
+    color: rgb(255, 254, 254);
+    font-size: 21px;
+}
+
+.manus li{
+    background-color:transparent;
+    min-width:100px;
+    height:50px;
+    display: inline-block;
+    margin-left: 3px;
+    padding: 14px 14px 14px 14px;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    color: white;
+    font-weight: 300;
+
+
+}
+.contest{
+    background-color:rgb(156, 4, 161);
+    min-width:100px;
+    height:40px;
+    position: relative;
+    top: 19px;
+    left: 32px;
+    border: 1px solid transparent;
+    border-radius: 7px 7px 7px 7px;
+    color: rgb(255, 254, 254);
+    padding: 8px 10px 10px 18px;
+
+
+}
+.free_vid{
+    background-color:transparent;
+    min-width:100px;
+    height:40px;
+    position: relative;
+    top: 6px;
+    left: 42px;
+    border: 3px solid red;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+    padding: 6px 10px 10px 21px;
+
+
+
+
+}
+.accnt{
+    background-color:blueviolet;
+    min-width:100px;
+    height:43px;
+    position: relative;
+    top: 3px;
+    left: 524px;
+    border: 3px solid rgb(8, 8, 8);
+    border-radius: 26px 26px 26px 26px;
+    color: black;
+    padding: 10px 10px;
+ 
+} */
+#navber{
+    width:100vw;
+    height:7vh;
+    background-color:  rgb(253, 253, 253);
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: all .5s ease;
+    box-shadow: 0px 1px 15px grey; 
+    padding-right: 10vw;
+    padding-left: 8vw;
+    
+}
+
+#navber .logo {
+    width: 6vw;
+    height: 6vw;
+    position: relative;
+    top:-1.3vw;
+    
+}
+#navber .Brand_name {
+    width: 8vw;
+    height: 1.7vw;
+    color: black;
+    font-size: 1.6vw;
+    background-color: transparent;
+    border-left: 0.3vw solid rgb(138, 135, 135);
+    padding: 0vw 0.6vw;
+    position: relative;
+    top: 0.5vw;
+    left: -0.3vw;
+    font-family: "Gilroy";
+}
+
+.logo_brand{
+    background-color: transparent;
+    position: relative;
+    top: .35vw;
+    display: flex;
+}
+
+
+
+
+#navber .menus{
+    min-width:20vw;
+    background-color:transparent;
+    position: relative;
+    top:.82vw;
+    left:140px;
+    display: flex;
+    flex-flow: row wrap;
+    gap:1vw;
+    font-family: 'Heebo', sans-serif
+
+}
+#navber .menus a{
+    min-width:2.7vw;
+    height:1.5vw;
+    background-color:transparent;
+    font-size:1.1vw;
+    text-decoration: none;
+    
+
+}
+#navber .menus a li {
+    min-width: 2.7vw;
+    list-style-type: none;
+    padding: .2vw .2vw;
+    color: black;
+     font-weight: 600;
+    font-family: 'Heebo', sans-serif;
+    transition: all .5s ease;
+}
+#navber .menus a li:hover {
+
+    color: rgb(96, 96, 240);
+
+}
+.log_in{
+    background-color: transparent;
+    position: relative;
+    top: .4vw;
+    display: flex;
+    gap: .4vw;
+}
+#navber .log_in .dashboard,#navber .log_in .signIn{
+    width:6vw;
+    height:2.7vw;
+    background-color: crimson;
+    padding: .5vw .5vw;
+    border: 2px solid transparent;
+    border-radius: .2vw .2vw .2vw .2vw;
+    color: aliceblue;
+    font-size: .8vw;
+    box-shadow: 0px 0px 10px grey;
+    font-family: 'Heebo', sans-serif;
+
+}
+#navber .log_in .logout{
+    width:6vw;
+    height:2.7vw;
+    background-color: crimson;
+    padding: .5vw .5vw;
+    border: 2px solid transparent;
+    border-radius: .2vw .2vw .2vw .2vw;
+    color: aliceblue;
+    font-size: .8vw;
+    box-shadow: 0px 0px 10px grey;
+    font-family: 'Heebo', sans-serif;
+}
+
+#navber .log_in .signIn{
+   
+background-color: blueviolet;
+
+}
+
+
+.profile {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: rgb(209, 209, 253);
+    border: 0.15vw solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 10.6px;
+    left: 270px;
+    font-size: 1.5vw;
+    padding-bottom: -8px;
+    visibility: hidden;
+
+}
+.profile_manu{
+    width: 8vw;
+    height: 0px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    top: 67px;
+    left: 135px;
+    font-size: 1.5vw;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+.profile_manu li {
+    width: 8vw;
+    height: 2vw;
+    background-color: rgb(247, 248, 247);
+    padding-left: 44px;
+    padding-top: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid grey;
+    list-style-type: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.profile_manu li:hover{
+    color:blueviolet
+}
+
+
+/*navber stylling end*/
+
+
+
+/*footer styllinbg startinngg------*/
+footer{
+    background-color:rgb(68, 68, 68);
+    width:100vw;
+    height:427px;
+    position: relative;
+    top: 170px;
+    left: 0px;
+    margin-top: 20px;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    padding:80px 10px 10px 85px;
+
+}
+footer .quick_link{
+    background-color:transparent;
+    width:300px;
+    height:80px;
+    position: relative;
+    top:-174px;
+    left: 1400px;
+    display: inline-block;
+    color:white;
+
+}
+/*footer styllinbg ending------*/
+/*card css stylling start----------*/
+.cards{
+    background-color:rgb(17, 230, 17);
+    width:420px;
+    min-height:525px;
+    position: relative;
+    top: -19px;
+    left: -60px;
+    display: inline-block;
+    box-shadow: 5px 5px grey;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    
+}
+.cards .image{
+    background-color:rgb(245, 9, 9);
+    min-width:370px;
+    height:300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding:10px 10px 10px 10px 10px ;
+
+}
+.cards .course_description{
+    background-color:transparent;
+    min-width:370px;
+    min-height:132px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding:10px 10px 10px 10px 10px ;
+
+
+}
+.cards .rating{
+    background-color:transparent;
+    min-width:370px;
+    height:37px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding:10px 10px 10px 10px 10px;
+
+
+}
+.cards .buttons{
+    background-color:transparent;
+    min-width:370px;
+    height:155px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding:10px 10px 10px 10px 10px ;
+    display:flex;
+    flex-flow: row wrap;
+
+
+}
+.buttons .live{
+    background-color:rgb(251, 252, 251);
+    min-width:130px;
+    height:40px;
+    position: relative;
+    top: 12px;
+    left: 20px;
+    border: 3px solid transparent;
+    border-radius: 21px 21px 21px 21px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    
+
+}
+.buttons .join{
+    background-color:rgb(253, 195, 2);
+    min-width:100px;
+    height:40px;
+    position: relative;
+    top:0px;
+    left: 35px;
+    border: 3px solid transparent;
+    box-shadow: 2px 2px black;
+    
+    color: black;
+    padding: 0px 0px 0px 0px;
+    margin-right: 10px;
+
+}
+.buttons .explore{
+    background-color:rgb(95, 94, 95);
+    min-width:100px;
+    height:40px;
+    position: relative;
+    top: 0px;
+    left: 40px;
+    border: 3px solid transparent;
+    box-shadow: 2px 2px black;
+    
+    color: black;
+    padding: 0px 0px 0px 0px;
+
+    
+}
+
+
+
+
+/*----main footer-----*/
+
+
+
+.footer{
+    background-color: blueviolet;
+    width:100%;
+    height:460px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 3vw;
+}
+.footer h2{
+    width:100%;
+    height:200px;
+    font-size:50px;
+    position:relative;
+    top:65px;
+    left:780px;
+    padding: 20px 20px 20px 20px;
+    color:white;
+    background-color: transparent;
+    font-family: "Gilroy";
+
+
+
+}
+
+.footer h4{
+    width:100%;
+    height:200px;
+    font-size:30px;
+    position:relative;
+    top:-50px;
+    left:560px;
+    padding: 20px 20px 20px 20px;
+    color:white;
+    background-color: transparent;
+    font-weight: 300;
+}
+.footer div {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -155px;
+    left: 745px;
+    margin: 0px 15px 0px 0px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+    padding: 12.8px 5px 10px 13.9px;
+}
+.footer div i{
+    font-size: 35px;
+    position: relative;
+    top:0px;
+    left:0px;
+
+}
+.footer div:hover{
+
+    box-shadow: 0px 0px 15px rgb(245, 245, 245);
+    transform: scale(1.15,1.15);
+    background-color: black;
+    color: white;
+
+}
+
+.terms{
+    width:25vw;
+    height:3vw;
+    background-color: transparent;
+    position: relative;
+    top:-5vw;
+    left:37vw;
+    display: flex;
+    justify-content: space-between;
+}
+.terms h3{
+    font-family: 'Heebo', sans-serif;
+     font-size: 1vw;
+     color: white;
+
+}
+

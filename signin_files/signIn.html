@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+    <!-- <link rel="stylesheet" href="signin.css"> -->
+
+    <style>
+
+.form{
+	width:100vw;
+	height:100vh;
+	background-color: rgb(2, 2, 2);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+}
+.form_div{
+	width:500px;
+	height:500px;
+	background-color: white;
+	
+	
+}
+.inputs{
+	
+	position: relative;
+	top:75px;
+     left:120px;
+	
+}
+#Email,#Pass{
+	width:260px;
+	height:30px;
+	background-color:#bef5f5;
+	border-bottom: 2px solid green;
+	margin-bottom: 7px;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid red;
+	padding: 10px 10px 10px 10px;
+
+
+}
+
+.Sign_in{
+	width:120px;
+	height:40px;
+	background-color: green;
+	outline: none;
+	border: none;
+	margin-left: 77px;
+	margin-top: 10px;
+}
+::placeholder{
+	font-size: 13px;
+	font-weight: 700;
+	color: black;
+}
+input:focus{
+	border:1px solid transparent;
+}
+    </style>
+</head>
+<body>
+<!-- 
+    <div class="form">
+        <input type="email" name="" id="Email" placeholder="Enter your email">
+        <input type="password" name="" id="Password" placeholder="Enter password">
+        <button class="Sign_up"><b>sign up</b></button>
+        <button class="Log_in"><b>log in</b></button>
+        <button class="Log_out"><b>log out</b></button>
+
+    </div> -->
+
+	<div class="form">
+
+		<div class="form_div">
+			<h1 style="position: relative;top:66px;left:166px" id="login_h1">Log In Form</h1>
+			<div class="inputs">
+				<input type="text" name="" value="" id="Email" placeholder="Enter Your Email"><br>
+				<input type="password" name="" value="" placeholder="Enter Your Password" id="Pass"><br>
+				<button class="Sign_in">Submit</button>
+			</div>
+         
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+    <script type="module" src="sign_in.js">
+        // Import the functions you need from the SDKs you need
+       
+      </script>
+</body>
+</html>
